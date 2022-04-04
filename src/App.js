@@ -36,17 +36,17 @@ function App() {
     }
   };
 
-  const setDefaults = () => {
-    if (provinces.length > 0) {
-      setDistricts(provinces[0].children);
-    } else if (districts.length > 0) {
-      setSectors(districts[0].children);
-    } else if (sectors.length > 0) {
-      setCells(sectors[0].children);
-    } else if (cells.length > 0) {
-      setVilages(cells[0].children);
-    }
-  };
+  // const setDefaults = () => {
+  //   if (provinces.length > 0) {
+  //     setDistricts(provinces[0].children);
+  //   } else if (districts.length > 0) {
+  //     setSectors(districts[0].children);
+  //   } else if (sectors.length > 0) {
+  //     setCells(sectors[0].children);
+  //   } else if (cells.length > 0) {
+  //     setVilages(cells[0].children);
+  //   }
+  // };
 
   useEffect(() => {
     setProvinces(data);
